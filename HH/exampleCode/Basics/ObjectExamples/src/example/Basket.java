@@ -24,11 +24,18 @@ public class Basket {
 	public String getDescriptionOfAllItems()
 	{
 		String sDescription = "";
-		for(int i=0; i<this.shopping.length; i++)
+		for(int i=0; i<this.iNumberOfItems; i++)
 		{
-			sDescription += this.shopping[i].returnDescription();	//collect all the descriptions of the items
+			sDescription += this.shopping[i].returnDescription() + "\n\n";	//collect all the descriptions of the items
 		}
 		return(sDescription);
+	}
+	
+	//add item to shopping basket
+	public void addShoppingItem(String sName, float fAmount)
+	{
+		this.shopping[this.iNumberOfItems] = new Item(sName, fAmount);
+		this.iNumberOfItems++;
 	}
 
 }
