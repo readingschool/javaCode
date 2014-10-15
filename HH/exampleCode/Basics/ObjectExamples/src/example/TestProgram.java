@@ -25,6 +25,8 @@ public class TestProgram {
 		myShopping.addShoppingItem("Baguette", 4.25f);
 		myShopping.addShoppingItem("Crisps", 1.05f);
 		myShopping.addShoppingItem("Lemons", 0.99f);
+		myShopping.addShoppingItem("Onions", 1.99f);
+		myShopping.addShoppingItem("Tomatoes", 3.99f);
 		
 		JOptionPane.showMessageDialog(null, myShopping.getDescriptionOfAllItems() );
 
